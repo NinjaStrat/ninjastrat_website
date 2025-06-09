@@ -5,9 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true
   },
-  // GitHub Pages configuration
-  basePath: '',
-  assetPrefix: '',
+  // Configure for static export
+  distDir: 'out',
 }
 
 module.exports = nextConfig 
