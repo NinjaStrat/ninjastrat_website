@@ -83,7 +83,7 @@ module.exports = {
           higher: '#3b4261',
         },
         text: {
-          primary: '#c0caf5',
+          primary: '#ffffff',
           secondary: '#a9b1d6',
           muted: '#737aa2',
           accent: '#7aa2f7',

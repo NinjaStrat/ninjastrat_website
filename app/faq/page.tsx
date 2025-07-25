@@ -86,8 +86,8 @@ export default function FAQPage() {
               <div className="bg-white rounded-lg shadow-lg p-6 border-l-4 border-teal-500">
                 <h3 className="text-xl font-semibold text-teal-500 mb-3">What kind of support is available?</h3>
                 <p className="text-text-secondary">
-                  NinjaStrat provides comprehensive support including email assistance, live chat during business hours, 
-                  detailed documentation, video tutorials, and a knowledge base. Our support team is available Monday-Friday, 
+                  NinjaStrat provides comprehensive support including email assistance, detailed documentation, 
+                  video tutorials, and a knowledge base. Our support team is available Monday-Friday, 
                   9 AM - 5 PM EST.
                 </p>
               </div>

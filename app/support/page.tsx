@@ -1,5 +1,6 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import contacts from '../../config/contacts.json';
 
 export default function SupportPage() {
   return (
@@ -16,7 +17,7 @@ export default function SupportPage() {
               troubleshooting.
             </p>
 
-            <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
               <div className="bg-gray rounded-lg shadow-lg p-6 text-center border-2 border-primary/20">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📧</span>
@@ -30,18 +31,6 @@ export default function SupportPage() {
                 </button>
               </div>
 
-              <div className="bg-gray rounded-lg shadow-lg p-6 text-center border-2 border-gray-200">
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl">💬</span>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Live Chat</h3>
-                <p className="text-text-secondary mb-4">
-                  Real-time assistance during business hours
-                </p>
-                <button className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
-                  Start Chat
-                </button>
-              </div>
 
               <div className="bg-gray rounded-lg shadow-lg p-6 text-center border-2 border-gray-200">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -125,7 +114,7 @@ export default function SupportPage() {
                 Still need help?
               </h3>
               <p className="text-blue-700 mb-4">
-                Our support team is available Monday-Friday, 9 AM - 5 PM EST
+                Our support team is available {contacts.support.hours}
               </p>
               <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
                 Contact Support Team

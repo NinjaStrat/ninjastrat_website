@@ -1,0 +1,34 @@
+{
+  "email": "phaedostrades@gmail.com",
+  "social": {
+    "twitter": {
+      "company": {
+        "url": "https://x.com/TheNinjaStrat",
+        "primary": true
+      },
+      "personal": {
+        "url": "https://x.com/PhaedosTrades",
+        "primary": false
+      }
+    },
+    "github": {
+      "company": {
+        "url": "https://github.com/NinjaStrat",
+        "primary": true
+      },
+      "personal": {
+        "url": "https://github.com/spencerduran",
+        "primary": false
+      }
+    },
+    "discord": "https://discord.gg/ninjastrat",
+    "instagram": "https://instagram.com/phaedostrades",
+    "tiktok": "https://tiktok.com/@phaedostrades",
+    "linkedin": "https://www.linkedin.com/in/spencer-duran-cdmp-2aba685b",
+    "youtube": "https://youtube.com/@phaedostrades"
+  },
+  "support": {
+    "email": "phaedostrades@gmail.com",
+    "hours": "Monday-Friday, 9 AM - 5 PM EST"
+  }
+}
