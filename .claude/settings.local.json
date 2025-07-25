@@ -4,7 +4,9 @@
       "Bash(rg:*)",
       "Bash(npm run dev:*)",
       "Bash(mkdir:*)",
-      "Bash(git remote add:*)"
+      "Bash(git remote add:*)",
+      "Bash(npm run build:*)",
+      "Bash(touch:*)"
     ]
   },
   "enableAllProjectMcpServers": false
