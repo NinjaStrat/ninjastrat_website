@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 
 export default function NinjaTraderPage() {
   return (
@@ -15,14 +16,18 @@ export default function NinjaTraderPage() {
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Images */}
                 <div className="text-center">
-                  <img 
+                  <Image 
                     src="/images/NinjaTrader_Wordmark_color_RGB.png" 
                     alt="NinjaTrader Wordmark" 
+                    width={400}
+                    height={100}
                     className="mx-auto mb-6 max-w-sm w-full h-auto"
                   />
-                  <img 
+                  <Image 
                     src="/images/NinjaTrader_Monitor_Image.png" 
                     alt="NinjaTrader Platform" 
+                    width={600}
+                    height={400}
                     className="mx-auto max-w-full w-full h-auto"
                   />
                 </div>
@@ -103,14 +108,18 @@ export default function NinjaTraderPage() {
                 
                 {/* Right side - Images */}
                 <div className="text-center">
-                  <img 
+                  <Image 
                     src="/images/Kinetick_Logo.png" 
                     alt="Kinetick Logo" 
+                    width={300}
+                    height={100}
                     className="mx-auto mb-6 max-w-sm w-full h-auto"
                   />
-                  <img 
+                  <Image 
                     src="/images/Kinetick_Badge.png" 
                     alt="Kinetick Badge" 
+                    width={400}
+                    height={400}
                     className="mx-auto max-w-md w-full h-auto"
                   />
                 </div>
