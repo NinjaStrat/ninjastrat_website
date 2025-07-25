@@ -10,7 +10,7 @@ const nextConfig = {
     unoptimized: true
   },
   // Configure for static export
-  distDir: 'out',
+  distDir: 'docs',
 }
 
 module.exports = nextConfig 
