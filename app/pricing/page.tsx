@@ -3,10 +3,9 @@ import Footer from '@/components/Footer'
 
 export default function PricingPage() {
   return (
-    <>
+    <div className="min-h-screen bg-background flex flex-col">
       <Navigation />
-      <div className="flex-grow">
-        <main className="container mx-auto px-8 py-20">
+      <main className="flex-grow container mx-auto px-8 py-20">
           <h1 className="text-4xl font-bold text-center mb-8 text-primary">Lifetime Access</h1>
           <div className="max-w-2xl mx-auto text-center">
             <p className="text-text-secondary mb-12 text-lg">
@@ -72,9 +71,8 @@ export default function PricingPage() {
               </div>
             </div>
           </div>
-        </main>
-      </div>
+      </main>
       <Footer />
-    </>
+    </div>
   )
 } 

@@ -1,3 +1,6 @@
+import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
+
 export default function VideoSection() {
   return (
     <section className="py-20 bg-gradient-to-b from-background-secondary to-surface">
@@ -12,29 +15,29 @@ export default function VideoSection() {
           </p>
           
           <div className="card-elevated p-8 md:p-12">
-            {/* Video placeholder */}
+            {/* Demo GIF */}
             <div className="relative bg-surface rounded-xl overflow-hidden shadow-2xl border border-surface-higher group hover:border-primary/50 transition-all duration-300">
-              <div className="aspect-video bg-gradient-to-br from-background to-surface-elevated flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300 glow-primary">
-                    <svg className="w-10 h-10 text-background" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                    </svg>
+              <div className="aspect-video relative">
+                <Image
+                  src={getImagePath('/images/giphy.gif')}
+                  alt="StratEngine Demo"
+                  fill
+                  className="object-cover"
+                  unoptimized // Important for GIFs to animate
+                  priority
+                />
+                
+                {/* Optional overlay for play button or text */}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-center pb-8">
+                  <div className="text-center">
+                    <h3 className="text-xl font-semibold text-text-primary mb-2">
+                      #TheStrat StratEngine in Action
+                    </h3>
+                    <p className="text-text-secondary text-sm">
+                      Live pattern recognition and automated trading
+                    </p>
                   </div>
-                  <h3 className="text-2xl font-semibold text-text-primary mb-2">
-                    #TheStrat StratEngine Demo
-                  </h3>
-                  <p className="text-text-secondary">
-                    Live demonstration of automated bar categorization, TFC analysis, and pattern-based trade execution
-                  </p>
                 </div>
-              </div>
-              
-              {/* YouTube embed placeholder */}
-              <div className="absolute inset-0 flex items-center justify-center bg-background/95 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="btn-primary glow-primary text-lg px-8 py-4">
-                  Play Demo Video
-                </button>
               </div>
             </div>
             

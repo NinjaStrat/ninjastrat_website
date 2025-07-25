@@ -1,40 +1,49 @@
+import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
+
 export default function CoreFeatures() {
   const features = [
     {
       title: "#TheStrat Pattern Recognition",
       description: "Complete automation of Rob Smith's methodology with 1, 2U, 2D, 3 bar categorization, plus Hammer and Shooter momentum patterns. Includes Inside/Outside bar detection and multi-timeframe trend analysis.",
       icon: "📊",
-      gradient: "from-primary to-sky-blue"
+      gradient: "from-primary to-sky-blue",
+      gif: "giphy (1).gif"
     },
     {
       title: "Multi-Timeframe Analysis", 
       description: "Advanced TFC (Timeframe Continuity) calculations across up to 4 higher timeframes. Dual trend methods with ATR trail and broadening formation detection for comprehensive bias analysis.",
       icon: "⏰",
-      gradient: "from-secondary to-light-purple"
+      gradient: "from-secondary to-light-purple",
+      gif: "giphy (2).gif"
     },
     {
       title: "Advanced Entry Signals",
       description: "Failed 2s reversal detection with 3 modes (None/Both/Only), optional 3-bar pattern setups (3→2U, 3→2D), momentum patterns, and pullback filters requiring SMA touch within 3 bars.",
       icon: "🎯",
-      gradient: "from-warning to-orange"
+      gradient: "from-warning to-orange",
+      gif: "giphy (3).gif"
     },
     {
       title: "Professional Risk Management",
       description: "Account percentage-based position sizing, fixed dollar risk controls, drawdown-adjusted calculations, multiple stop types (Fixed/Previous/Current Bar), and smart auto-adjusting stop placement.",
       icon: "🛡️",
-      gradient: "from-success to-bright-green"
+      gradient: "from-success to-bright-green",
+      gif: "giphy (4).gif"
     },
     {
       title: "Smart Exit Management",
       description: "R-multiple reward targets, Cover Risk mode (1:1 R/R + custom target), break-even stop management, first reversal exits, and daily profit/loss limits with automatic position management.",
       icon: "📈",
-      gradient: "from-teal to-light-teal"
+      gradient: "from-teal to-light-teal",
+      gif: "giphy (5).gif"
     },
     {
       title: "Visual Trading Interface",
       description: "Trend-based candle coloring, 20-period SMA display, ATR trail indicators, broadening formation trendlines, swing pivot markers, and customizable chart management controls.",
       icon: "🎨",
-      gradient: "from-bright-pink to-magenta"
+      gradient: "from-bright-pink to-magenta",
+      gif: "giphy (6).gif"
     }
   ]
 
@@ -68,9 +77,18 @@ export default function CoreFeatures() {
                 {feature.description}
               </p>
               
-              {/* Placeholder for video/demo */}
-              <div className="mt-6 bg-surface-elevated rounded-lg h-32 flex items-center justify-center border border-surface-higher group-hover:border-primary/50 transition-colors duration-300">
-                <span className="text-text-secondary">Demo Video</span>
+              {/* Demo GIF */}
+              <div className="mt-6 bg-surface-elevated rounded-lg overflow-hidden border border-surface-higher group-hover:border-primary/50 transition-colors duration-300">
+                <div className="relative aspect-video">
+                  <Image
+                    src={getImagePath(`/images/${feature.gif}`)}
+                    alt={`${feature.title} Demo`}
+                    fill
+                    className="object-cover"
+                    unoptimized // Important for GIFs
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
               </div>
             </div>
           ))}

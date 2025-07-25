@@ -101,6 +101,15 @@ a {
   box-shadow: 0 0 20px rgba(187, 154, 247, 0.3);
 }
 
+/* Hover glow effects */
+.hover\:glow-primary:hover {
+  box-shadow: 0 0 20px rgba(122, 162, 247, 0.3);
+}
+
+.hover\:glow-secondary:hover {
+  box-shadow: 0 0 20px rgba(187, 154, 247, 0.3);
+}
+
 .text-shadow-glow {
   text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
