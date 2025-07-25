@@ -17,42 +17,85 @@ export default function SupportPage() {
               troubleshooting.
             </p>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              <div className="bg-gray rounded-lg shadow-lg p-6 text-center border-2 border-primary/20">
+            <div className="grid md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-surface-elevated rounded-lg shadow-lg p-6 text-center border border-secondary/20 hover:border-secondary/40 transition-colors">
+                <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M16.942 4.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-8.662zM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-semibold mb-2 text-text-primary">Discord Community</h3>
+                <p className="text-text-secondary mb-4">
+                  Join our community for instant help
+                </p>
+                <a 
+                  href={contacts.social.discord}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-secondary hover:bg-secondary-hover text-white px-6 py-2 rounded-lg font-semibold transition-colors inline-block"
+                >
+                  Join Discord
+                </a>
+              </div>
+
+              <div className="bg-surface-elevated rounded-lg shadow-lg p-6 text-center border border-primary/20 hover:border-primary/40 transition-colors">
                 <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📧</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Email Support</h3>
+                <h3 className="text-xl font-semibold mb-2 text-text-primary">Email Support</h3>
                 <p className="text-text-secondary mb-4">
                   Get personalized help via email
                 </p>
-                <button className="bg-primary hover:bg-primary-hover text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+                <a 
+                  href={`mailto:${contacts.support.email}`}
+                  className="btn-primary inline-block"
+                >
                   Contact Support
-                </button>
+                </a>
               </div>
+            </div>
 
-
-              <div className="bg-gray rounded-lg shadow-lg p-6 text-center border-2 border-gray-200">
-                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="bg-surface-elevated rounded-lg shadow-lg p-8 mb-12 border border-sky-blue/20 hover:border-sky-blue/40 transition-colors">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-sky-blue/10 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl">📚</span>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">Knowledge Base</h3>
-                <p className="text-text-secondary mb-4">
-                  Browse articles and tutorials
+                <h3 className="text-2xl font-semibold mb-4 text-text-primary">Documentation & Guides</h3>
+                <p className="text-text-secondary mb-6">
+                  Complete setup guides, configuration options, and best practices for all NinjaStrat products
                 </p>
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
-                  Browse Articles
+              </div>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="text-sky-blue text-3xl mb-2">📋</div>
+                  <h4 className="font-semibold text-text-primary mb-1">Installation Guides</h4>
+                  <p className="text-sm text-text-secondary">Step-by-step setup instructions</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-sky-blue text-3xl mb-2">⚙️</div>
+                  <h4 className="font-semibold text-text-primary mb-1">Configuration Manual</h4>
+                  <p className="text-sm text-text-secondary">Optimize your settings</p>
+                </div>
+                <div className="text-center">
+                  <div className="text-sky-blue text-3xl mb-2">🛠️</div>
+                  <h4 className="font-semibold text-text-primary mb-1">Troubleshooting</h4>
+                  <p className="text-sm text-text-secondary">Common issues and solutions</p>
+                </div>
+              </div>
+              <div className="text-center mt-6">
+                <button className="bg-sky-blue hover:bg-sky-blue/80 text-white px-6 py-2 rounded-lg font-semibold transition-colors">
+                  Browse Documentation
                 </button>
               </div>
             </div>
 
-            <div className="bg-gray rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-semibold mb-6">
+            <div className="bg-surface-elevated rounded-lg shadow-lg p-8 border border-primary/10">
+              <h2 className="text-2xl font-semibold mb-6 text-text-primary">
                 Frequently Asked Questions
               </h2>
 
               <div className="space-y-6">
-                <div className="border-b border-gray-200 pb-4">
+                <div className="border-b border-surface-higher pb-4">
                   <h3 className="text-lg font-semibold text-primary mb-2">
                     How do I install StratEngine?
                   </h3>
@@ -63,7 +106,7 @@ export default function SupportPage() {
                   </p>
                 </div>
 
-                <div className="border-b border-gray-200 pb-4">
+                <div className="border-b border-surface-higher pb-4">
                   <h3 className="text-lg font-semibold text-primary mb-2">
                     What are the system requirements?
                   </h3>
@@ -74,7 +117,7 @@ export default function SupportPage() {
                   </p>
                 </div>
 
-                <div className="border-b border-gray-200 pb-4">
+                <div className="border-b border-surface-higher pb-4">
                   <h3 className="text-lg font-semibold text-primary mb-2">
                     Can I use StratEngine with demo accounts?
                   </h3>
@@ -85,7 +128,7 @@ export default function SupportPage() {
                   </p>
                 </div>
 
-                <div className="border-b border-gray-200 pb-4">
+                <div className="border-b border-surface-higher pb-4">
                   <h3 className="text-lg font-semibold text-primary mb-2">
                     What markets does StratEngine support?
                   </h3>
@@ -109,16 +152,29 @@ export default function SupportPage() {
               </div>
             </div>
 
-            <div className="mt-12 bg-blue-50 border border-blue-200 rounded-lg p-6 text-center">
-              <h3 className="text-lg font-semibold text-blue-800 mb-2">
+            <div className="mt-12 bg-primary/5 border border-primary/20 rounded-lg p-8 text-center">
+              <h3 className="text-2xl font-semibold text-primary mb-4">
                 Still need help?
               </h3>
-              <p className="text-blue-700 mb-4">
+              <p className="text-text-secondary mb-6">
                 Our support team is available {contacts.support.hours}
               </p>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-colors">
-                Contact Support Team
-              </button>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a 
+                  href={`mailto:${contacts.support.email}`}
+                  className="btn-primary"
+                >
+                  Email Support Team
+                </a>
+                <a 
+                  href={contacts.social.discord}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-surface-higher hover:bg-dark-quaternary text-text-primary px-8 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Open Discord Ticket
+                </a>
+              </div>
             </div>
           </div>
         </main>

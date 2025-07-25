@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,8 +13,15 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center font-bold text-xl text-background group-hover:scale-105 transition-transform duration-200 glow-primary">
-              N
+            <div className="relative w-10 h-10 group-hover:scale-105 transition-transform duration-200">
+              <Image 
+                src="/images/NS_logo.png" 
+                alt="NinjaStrat Logo"
+                width={40}
+                height={40}
+                className="object-contain"
+                priority
+              />
             </div>
             <span className="text-xl font-bold text-text-primary group-hover:text-primary transition-colors duration-200">
               NinjaStrat
@@ -25,8 +33,11 @@ export default function Navigation() {
             <Link href="/pricing" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
               Pricing
             </Link>
-            <Link href="/downloads" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
-              Downloads
+            <Link href="/indicators" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
+              Indicators
+            </Link>
+            <Link href="/strategies" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
+              Strategies
             </Link>
             <Link href="/support" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
               Support
@@ -39,9 +50,6 @@ export default function Navigation() {
             </Link>
             <Link href="/contact" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
               Contact
-            </Link>
-            <Link href="/about" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
-              About
             </Link>
             <button className="btn-primary glow-primary">
               Get Started
@@ -75,11 +83,18 @@ export default function Navigation() {
                 Pricing
               </Link>
               <Link 
-                href="/downloads" 
+                href="/indicators" 
                 className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium py-2"
                 onClick={() => setIsOpen(false)}
               >
-                Downloads
+                Indicators
+              </Link>
+              <Link 
+                href="/strategies" 
+                className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                Strategies
               </Link>
               <Link 
                 href="/support" 
@@ -108,13 +123,6 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 Contact
-              </Link>
-              <Link 
-                href="/about" 
-                className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium py-2"
-                onClick={() => setIsOpen(false)}
-              >
-                About
               </Link>
               <button 
                 className="btn-primary mt-4 text-center"
