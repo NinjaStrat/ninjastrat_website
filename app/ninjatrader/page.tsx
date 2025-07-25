@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
 import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
 
 export default function NinjaTraderPage() {
   return (
@@ -17,14 +18,14 @@ export default function NinjaTraderPage() {
                 {/* Left side - Images */}
                 <div className="text-center">
                   <Image 
-                    src="/images/NinjaTrader_Wordmark_color_RGB.png" 
+                    src={getImagePath('/images/NinjaTrader_Wordmark_color_RGB.png')} 
                     alt="NinjaTrader Wordmark" 
                     width={400}
                     height={100}
                     className="mx-auto mb-6 max-w-sm w-full h-auto"
                   />
                   <Image 
-                    src="/images/NinjaTrader_Monitor_Image.png" 
+                    src={getImagePath('/images/NinjaTrader_Monitor_Image.png')} 
                     alt="NinjaTrader Platform" 
                     width={600}
                     height={400}
@@ -109,14 +110,14 @@ export default function NinjaTraderPage() {
                 {/* Right side - Images */}
                 <div className="text-center">
                   <Image 
-                    src="/images/Kinetick_Logo.png" 
+                    src={getImagePath('/images/Kinetick_Logo.png')} 
                     alt="Kinetick Logo" 
                     width={300}
                     height={100}
                     className="mx-auto mb-6 max-w-sm w-full h-auto"
                   />
                   <Image 
-                    src="/images/Kinetick_Badge.png" 
+                    src={getImagePath('/images/Kinetick_Badge.png')} 
                     alt="Kinetick Badge" 
                     width={400}
                     height={400}

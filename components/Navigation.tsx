@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { getImagePath } from '@/lib/utils'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="relative w-10 h-10 group-hover:scale-105 transition-transform duration-200">
               <Image 
-                src="/images/NS_logo.png" 
+                src={getImagePath('/images/NS_logo.png')}
                 alt="NinjaStrat Logo"
                 width={40}
                 height={40}
