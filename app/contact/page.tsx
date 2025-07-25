@@ -16,7 +16,7 @@ export default function ContactPage() {
                   <span className="text-3xl">📧</span>
                 </div>
                 <h2 className="text-3xl font-semibold mb-4 text-primary">
-                  Get in Touch
+                  Contact Us
                 </h2>
                 <p className="text-text-secondary text-lg mb-6">
                   Have questions about StratEngine? Need technical support?

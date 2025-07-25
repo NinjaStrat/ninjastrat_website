@@ -52,7 +52,7 @@ module.exports = {
 
         // Semantic colors using the new palette
         primary: {
-          DEFAULT: "#7aa2f7",
+          DEFAULT: "#abc5fd",
           hover: "#7dcfff",
           dark: "#3d59a1",
         },
@@ -84,7 +84,7 @@ module.exports = {
         },
         text: {
           primary: "#ffffff",
-          secondary: "#a9b1d6",
+          secondary: "#FFFFFF",
           muted: "#737aa2",
           accent: "#7aa2f7",
         },
