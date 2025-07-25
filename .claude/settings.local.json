@@ -8,7 +8,8 @@
       "Bash(npm run build:*)",
       "Bash(touch:*)",
       "Bash(mv:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(tree:*)"
     ]
   },
   "enableAllProjectMcpServers": false
