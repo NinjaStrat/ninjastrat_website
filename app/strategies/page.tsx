@@ -12,19 +12,24 @@ export default function StrategiesPage() {
           </h1>
           <div className="max-w-4xl mx-auto">
             <p className="text-text-secondary mb-12 text-center text-lg">
-              Download our automated trading strategies powered by #TheStrat methodology.
+              Download our automated trading strategies powered by #TheStrat
+              methodology.
             </p>
             <div className="space-y-8">
               {/* Production Strategies */}
               <div>
-                <h2 className="text-2xl font-semibold text-primary mb-6">Production Strategies</h2>
+                <h2 className="text-2xl font-semibold text-primary mb-6">
+                  Production Strategies
+                </h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-surface-elevated rounded-lg shadow-lg p-8 border border-primary/20 hover:border-primary/40 transition-colors">
                     <h2 className="text-2xl font-semibold mb-4 text-text-primary">
                       STRATENGINE
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      The flagship automated trading system implementing complete Rob Smith #TheStrat methodology with advanced risk management and multi-timeframe analysis.
+                      The flagship automated trading system implementing
+                      complete #TheStrat methodology with advanced risk
+                      management and multi-timeframe analysis.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -54,7 +59,9 @@ export default function StrategiesPage() {
                       StratEngine Sniper
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      Precision trading strategy focused on high-probability sniper entries with tight risk control for maximum R-multiple returns.
+                      Precision trading strategy focused on high-probability
+                      sniper entries with tight risk control for maximum
+                      R-multiple returns.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -84,7 +91,9 @@ export default function StrategiesPage() {
                       StratEngine Failed 2s
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      Specialized strategy that capitalizes on failed 2U/2D patterns which often lead to explosive moves in the opposite direction.
+                      Specialized strategy that capitalizes on failed 2U/2D
+                      patterns which often lead to explosive moves in the
+                      opposite direction.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -114,7 +123,9 @@ export default function StrategiesPage() {
                       FibStrike
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      Advanced Fibonacci-based strategy that combines key retracement levels with #TheStrat patterns for high-precision entries.
+                      Advanced Fibonacci-based strategy that combines key
+                      retracement levels with #TheStrat patterns for
+                      high-precision entries.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -144,7 +155,8 @@ export default function StrategiesPage() {
                       Hourly Stats
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      Statistical analysis strategy that trades based on hourly market patterns and historical probability edges.
+                      Statistical analysis strategy that trades based on hourly
+                      market patterns and historical probability edges.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -174,7 +186,9 @@ export default function StrategiesPage() {
                       Hourly Closes
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      Systematic strategy focused on trading hourly close patterns with specific setups that have shown consistent profitability.
+                      Systematic strategy focused on trading hourly close
+                      patterns with specific setups that have shown consistent
+                      profitability.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -203,14 +217,17 @@ export default function StrategiesPage() {
 
               {/* Development Strategies */}
               <div>
-                <h2 className="text-2xl font-semibold text-warning mb-6">Development Strategies (Beta)</h2>
+                <h2 className="text-2xl font-semibold text-warning mb-6">
+                  Development Strategies (Beta)
+                </h2>
                 <div className="grid md:grid-cols-2 gap-6">
                   <div className="bg-surface-elevated rounded-lg shadow-lg p-8 border border-warning/20 hover:border-warning/40 transition-colors">
                     <h2 className="text-2xl font-semibold mb-4 text-warning">
                       FibStrike Experiments
                     </h2>
                     <p className="text-text-secondary mb-6">
-                      Experimental variations of the FibStrike strategy testing new Fibonacci combinations and advanced pattern filters.
+                      Experimental variations of the FibStrike strategy testing
+                      new Fibonacci combinations and advanced pattern filters.
                     </p>
                     <ul className="text-text-secondary mb-6 space-y-2">
                       <li className="flex items-center">
@@ -226,7 +243,9 @@ export default function StrategiesPage() {
                         New pattern filters
                       </li>
                     </ul>
-                    <span className="text-sm text-warning">Beta Version - Use with caution</span>
+                    <span className="text-sm text-warning">
+                      Beta Version - Use with caution
+                    </span>
                     <button className="w-full btn-primary mt-4">
                       Download FibStrike_Experiments.cs
                     </button>
