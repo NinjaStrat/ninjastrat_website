@@ -12,7 +12,8 @@
       "Bash(tree:*)",
       "Bash(find:*)",
       "Bash(rm:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(timeout 10 npm run dev)"
     ]
   },
   "enableAllProjectMcpServers": false
