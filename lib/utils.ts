@@ -1,3 +1,4 @@
 export function getImagePath(src: string): string {
-  return src;
+  const basePath = process.env.NODE_ENV === 'production' ? '/ninjastrat_website' : '';
+  return `${basePath}${src}`;
 }

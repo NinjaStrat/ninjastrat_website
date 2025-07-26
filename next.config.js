@@ -3,8 +3,8 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   output: 'export',
-  basePath: '',
-  assetPrefix: '',
+  basePath: '/ninjastrat_website',
+  assetPrefix: '/ninjastrat_website',
   trailingSlash: true,
   images: {
     unoptimized: true
