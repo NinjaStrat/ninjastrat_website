@@ -1,5 +1,12 @@
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import { 
+  BeakerIcon,
+  BoltIcon,
+  ShieldCheckIcon,
+  ChartBarIcon,
+  CheckIcon
+} from '@heroicons/react/24/solid'
 
 export default function AboutPage() {
   return (
@@ -107,7 +114,7 @@ export default function AboutPage() {
                 
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <span className="text-blue-500 mr-3 mt-1">🔬</span>
+                    <BeakerIcon className="w-6 h-6 text-blue-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold">Advanced Analytics</h4>
                       <p className="text-text-secondary text-sm">Machine learning algorithms analyze market microstructure and volume patterns</p>
@@ -115,7 +122,7 @@ export default function AboutPage() {
                   </div>
                   
                   <div className="flex items-start">
-                    <span className="text-green-500 mr-3 mt-1">⚡</span>
+                    <BoltIcon className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold">Ultra-Low Latency</h4>
                       <p className="text-text-secondary text-sm">Optimized code and infrastructure for millisecond trade execution</p>
@@ -123,7 +130,7 @@ export default function AboutPage() {
                   </div>
                   
                   <div className="flex items-start">
-                    <span className="text-yellow-500 mr-3 mt-1">🛡️</span>
+                    <ShieldCheckIcon className="w-6 h-6 text-yellow-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold">Risk Protection</h4>
                       <p className="text-text-secondary text-sm">Multi-layered risk management with real-time position monitoring</p>
@@ -131,7 +138,7 @@ export default function AboutPage() {
                   </div>
                   
                   <div className="flex items-start">
-                    <span className="text-purple-500 mr-3 mt-1">📊</span>
+                    <ChartBarIcon className="w-6 h-6 text-purple-500 mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold">Market Adaptation</h4>
                       <p className="text-text-secondary text-sm">Dynamic parameter adjustment based on current market volatility</p>
@@ -150,23 +157,23 @@ export default function AboutPage() {
                 
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
+                    <CheckIcon className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Regular algorithm updates and improvements</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
+                    <CheckIcon className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Comprehensive performance reporting</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
+                    <CheckIcon className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Dedicated customer support team</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
+                    <CheckIcon className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Educational resources and training</span>
                   </div>
                   <div className="flex items-center">
-                    <span className="text-green-500 mr-3">✓</span>
+                    <CheckIcon className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
                     <span className="text-gray-700">Community of successful traders</span>
                   </div>
                 </div>

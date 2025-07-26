@@ -1,12 +1,18 @@
 import Image from 'next/image'
 import { getImagePath } from '@/lib/utils'
 
+import { 
+  ChartBarIcon,
+  BoltIcon,
+  CursorArrowRaysIcon
+} from '@heroicons/react/24/solid';
+
 export default function VideoSection() {
   return (
     <section className="py-20 bg-gradient-to-b from-background-secondary to-surface">
       <div className="container mx-auto px-8">
         <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             See <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">StratEngine</span> in Action
           </h2>
           
@@ -45,7 +51,7 @@ export default function VideoSection() {
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-primary to-sky-blue rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-background">📊</span>
+                  <ChartBarIcon className="w-8 h-8 text-background" />
                 </div>
                 <h4 className="text-lg font-semibold text-text-primary mb-2">Live Pattern Recognition</h4>
                 <p className="text-text-secondary text-sm">
@@ -55,7 +61,7 @@ export default function VideoSection() {
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-secondary to-light-purple rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-background">⚡</span>
+                  <BoltIcon className="w-8 h-8 text-background" />
                 </div>
                 <h4 className="text-lg font-semibold text-text-primary mb-2">Failed 2s Reversals</h4>
                 <p className="text-text-secondary text-sm">
@@ -65,7 +71,7 @@ export default function VideoSection() {
               
               <div className="text-center">
                 <div className="w-16 h-16 bg-gradient-to-br from-success to-bright-green rounded-xl flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl text-background">🎯</span>
+                  <CursorArrowRaysIcon className="w-8 h-8 text-background" />
                 </div>
                 <h4 className="text-lg font-semibold text-text-primary mb-2">Professional Risk Control</h4>
                 <p className="text-text-secondary text-sm">

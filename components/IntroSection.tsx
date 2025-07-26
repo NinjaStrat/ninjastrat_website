@@ -1,95 +1,117 @@
+import { 
+  ChartBarIcon,
+  BuildingOfficeIcon,
+  ClockIcon,
+  ShieldCheckIcon,
+  CheckIcon
+} from '@heroicons/react/24/solid';
+
 export default function IntroSection() {
   return (
     <section className="py-20 bg-gradient-to-b from-background-secondary to-surface">
       <div className="container mx-auto px-8">
-        <div className="max-w-4xl mx-auto text-center">
+        <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-8">
-            Meet{" "}
+            The{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              StratEngine
+              NinjaStrat Advantage
             </span>
           </h2>
-          <p className="text-xl text-text-secondary mb-8 leading-relaxed">
-            Professional #TheStrat automation engineered for NinjaTrader 8
+          <p className="text-xl text-text-secondary mb-12 leading-relaxed">
+            Systematic trading done right - combining multiple proven methodologies for consistent results
           </p>
 
-          <div className="card-elevated p-8 md:p-12 text-left">
-            <p className="text-lg text-text-primary mb-6 leading-relaxed">
-              NinjaStrat's{" "}
-              <span className="text-primary font-semibold">StratEngine</span> is
-              the most comprehensive automation of #TheStrat methodology
-              available. Unlike generic trading algorithms, StratEngine
-              implements the complete #TheStrat framework with precise bar
-              categorization, timeframe continuity analysis, and
-              professional-grade pattern recognition.
-            </p>
+          {/* Key Advantages Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            <div className="bg-surface-elevated rounded-xl p-6 border border-surface-higher hover:border-primary/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-sky-blue rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <ChartBarIcon className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Pattern Recognition</h3>
+              <p className="text-sm text-text-secondary">
+                #TheStrat, Failed 2s, Fibonacci patterns - multiple methodologies in one suite
+              </p>
+            </div>
 
-            <p className="text-lg text-text-primary mb-6 leading-relaxed">
-              From 1, 2U, 2D, and 3 bar patterns to advanced Hammer/Shooter
-              momentum signals, StratEngine captures every nuance of #TheStrat.
-              The system analyzes up to 4 higher timeframes for TFC (Timeframe
-              Continuity) bias, automatically detects failed 2s reversals, and
-              manages positions with institutional-level risk controls.
-            </p>
+            <div className="bg-surface-elevated rounded-xl p-6 border border-surface-higher hover:border-primary/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-secondary to-light-purple rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <BuildingOfficeIcon className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Market Structure</h3>
+              <p className="text-sm text-text-secondary">
+                Support/resistance, break of structure, and opening range analysis
+              </p>
+            </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mt-12">
+            <div className="bg-surface-elevated rounded-xl p-6 border border-surface-higher hover:border-primary/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-success to-bright-green rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <ClockIcon className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Timing & Momentum</h3>
+              <p className="text-sm text-text-secondary">
+                Multi-timeframe alignment and momentum confirmation
+              </p>
+            </div>
+
+            <div className="bg-surface-elevated rounded-xl p-6 border border-surface-higher hover:border-primary/50 transition-all duration-300">
+              <div className="w-12 h-12 bg-gradient-to-br from-warning to-orange rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <ShieldCheckIcon className="w-6 h-6 text-white" />
+              </div>
+              <h3 className="text-lg font-semibold text-text-primary mb-2">Risk-First Approach</h3>
+              <p className="text-sm text-text-secondary">
+                Never compromise on protection - institutional-grade risk management
+              </p>
+            </div>
+          </div>
+
+          {/* What Makes Us Different */}
+          <div className="card-elevated p-8 md:p-10">
+            <h3 className="text-2xl font-semibold text-text-primary mb-6 text-center">
+              What Makes Our Bots Different
+            </h3>
+            
+            <div className="grid md:grid-cols-2 gap-8">
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-primary mb-4">
-                  #TheStrat Implementation
-                </h3>
                 <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    Complete Strat methodology automation
-                  </span>
+                  <CheckIcon className="w-5 h-5 text-success flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-1">Real Trading Logic</h4>
+                    <p className="text-sm text-text-secondary">
+                      Not curve-fitted backtests - strategies proven in live markets
+                    </p>
+                  </div>
                 </div>
+                
                 <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    1, 2U, 2D, 3, Hammer, Shooter patterns
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    Multi-timeframe TFC analysis (4 HTFs)
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    Inside/Outside bar recognition
-                  </span>
+                  <CheckIcon className="w-5 h-5 text-success flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-1">Multiple Strategies</h4>
+                    <p className="text-sm text-text-secondary">
+                      Find opportunities in any market condition
+                    </p>
+                  </div>
                 </div>
               </div>
 
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-secondary mb-4">
-                  Advanced Features
-                </h3>
                 <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    Failed 2s reversal detection (3 modes)
-                  </span>
+                  <CheckIcon className="w-5 h-5 text-success flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-1">Professional Features</h4>
+                    <p className="text-sm text-text-secondary">
+                      Institutional-grade risk management in every bot
+                    </p>
+                  </div>
                 </div>
+                
                 <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    Broadening formation analysis
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    Professional position sizing
-                  </span>
-                </div>
-                <div className="flex items-start space-x-3">
-                  <span className="text-success text-lg">✓</span>
-                  <span className="text-text-primary">
-                    R-multiple and Cover Risk exits
-                  </span>
+                  <CheckIcon className="w-5 h-5 text-success flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-text-primary mb-1">Lifetime Updates</h4>
+                    <p className="text-sm text-text-secondary">
+                      Your bots evolve with markets and community feedback
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

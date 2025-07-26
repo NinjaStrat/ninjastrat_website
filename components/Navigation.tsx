@@ -4,12 +4,33 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { getImagePath } from '@/lib/utils'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { NavigationDropdown } from '@/components/ui/NavigationDropdown'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const indicatorItems = [
+    { name: 'View All Indicators', href: '/indicators', description: 'Browse complete indicator gallery' },
+    { name: 'StratCandles', href: '/indicators/stratcandles', description: 'Visual candle painting' },
+    { name: 'StratPatterns', href: '/indicators/stratpatterns', description: 'Pattern recognition overlay' },
+    { name: 'StratScanner', href: '/indicators/stratscanner', description: 'Multi-timeframe scanner' },
+    { name: 'StratAlerts', href: '/indicators/stratalerts', description: 'Real-time notifications' },
+  ]
+
+  const strategyItems = [
+    { name: 'View All Strategies', href: '/strategies', description: 'Browse complete strategy gallery' },
+    { name: 'STRATENGINE', href: '/strategies/stratengine', description: 'Complete automation suite' },
+    { name: 'Sniper', href: '/strategies/sniper', description: 'Precision entries' },
+    { name: 'Failed 2s', href: '/strategies/failed2s', description: 'Reversal specialist' },
+    { name: 'FibStrike', href: '/strategies/fibstrike', description: 'Fibonacci patterns' },
+    { name: 'TapsORBs', href: '/strategies/tapsorbs', description: 'Range breakouts' },
+    { name: 'Hourly Stats', href: '/strategies/hourlystats', description: 'Statistical edge (beta)' },
+    { name: 'StrongClose', href: '/strategies/strongclose', description: 'Strength based (beta)' },
+  ]
+
   return (
-    <nav className="bg-surface/95 backdrop-blur-md border-b border-surface-elevated sticky top-0 z-50">
+    <nav className="bg-surface-elevated/95 backdrop-blur-md border-b border-surface-higher sticky top-0 z-50">
       <div className="container mx-auto px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -34,12 +55,8 @@ export default function Navigation() {
             <Link href="/pricing" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
               Pricing
             </Link>
-            <Link href="/indicators" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
-              Indicators
-            </Link>
-            <Link href="/strategies" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
-              Strategies
-            </Link>
+            <NavigationDropdown label="Indicators" items={indicatorItems} />
+            <NavigationDropdown label="Strategies" items={strategyItems} />
             <Link href="/support" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
               Support
             </Link>
@@ -52,9 +69,9 @@ export default function Navigation() {
             <Link href="/contact" className="text-text-secondary hover:text-primary transition-colors duration-200 font-medium">
               Contact
             </Link>
-            <button className="btn-primary glow-primary">
+            <Link href="/pricing" className="btn-primary glow-primary">
               Get Started
-            </button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -62,13 +79,11 @@ export default function Navigation() {
             className="md:hidden text-text-primary hover:text-primary transition-colors duration-200"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              {isOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              )}
-            </svg>
+            {isOpen ? (
+              <XMarkIcon className="w-6 h-6" />
+            ) : (
+              <Bars3Icon className="w-6 h-6" />
+            )}
           </button>
         </div>
 

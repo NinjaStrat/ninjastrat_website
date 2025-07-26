@@ -12,9 +12,9 @@ export default function HeroSection() {
 
       <div className="relative z-10 container mx-auto px-8 py-20 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold mb-8 leading-tight text-white">
             <span className="bg-gradient-to-r from-primary via-sky-blue to-secondary bg-clip-text text-transparent">
-              Master #TheStrat
+              Algorithms. Strategy. Consistency.
             </span>
           </h1>
 
@@ -22,60 +22,25 @@ export default function HeroSection() {
             Algorithmic Trading featuring #TheStrat
           </p>
 
-          <p className="text-lg text-text-secondary mb-12 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-lg text-text-primary mb-12 max-w-2xl mx-auto leading-relaxed">
             StratEngine brings complete Strat methodology automation to
             NinjaTrader. From bar categorization and timeframe continuity to
             advanced pattern recognition and professional risk management –
             trade like the pros with full automation.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
             <button className="btn-primary glow-primary text-lg px-8 py-4 transform hover:scale-105 transition-all duration-200">
-              Start Free Trial
+              See Live Demo
             </button>
-            <button className="btn-secondary text-lg px-8 py-4 transform hover:scale-105 transition-all duration-200">
-              Watch Demo
-            </button>
+            <a href="/pricing" className="btn-secondary text-lg px-8 py-4 transform hover:scale-105 transition-all duration-200">
+              View Pricing
+            </a>
           </div>
-
-          {/* Key Features */}
-          <div className="grid md:grid-cols-3 gap-8 mt-16">
-            <div className="card p-6 text-center group hover:scale-105 transition-all duration-300 hover:glow-primary">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-sky-blue rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-background">📊</span>
-              </div>
-              <h3 className="text-xl font-semibold text-text-primary mb-2">
-                Full #TheStrat
-              </h3>
-              <p className="text-text-secondary">
-                Automated Strat trading methodology with 1, 2U, 2D, 3 patterns
-              </p>
-            </div>
-
-            <div className="card p-6 text-center group hover:scale-105 transition-all duration-300 hover:glow-secondary">
-              <div className="w-16 h-16 bg-gradient-to-br from-secondary to-light-purple rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-background">⏰</span>
-              </div>
-              <h3 className="text-xl font-semibold text-text-primary mb-2">
-                Multi-Timeframe
-              </h3>
-              <p className="text-text-secondary">
-                TFC analysis across 4 higher timeframes for precision entries
-              </p>
-            </div>
-
-            <div className="card p-6 text-center group hover:scale-105 transition-all duration-300 hover:glow-primary">
-              <div className="w-16 h-16 bg-gradient-to-br from-success to-bright-green rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl text-background">🎯</span>
-              </div>
-              <h3 className="text-xl font-semibold text-text-primary mb-2">
-                Pro Risk Management
-              </h3>
-              <p className="text-text-secondary">
-                Account-based sizing with multiple stop types and R-targets
-              </p>
-            </div>
-          </div>
+          
+          <p className="text-text-muted text-sm">
+            Lifetime access • No monthly fees • All future updates included
+          </p>
         </div>
       </div>
     </section>

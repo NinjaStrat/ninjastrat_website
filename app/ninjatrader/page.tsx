@@ -5,14 +5,13 @@ import { getImagePath } from '@/lib/utils'
 
 export default function NinjaTraderPage() {
   return (
-    <>
+    <div className="min-h-screen bg-background flex flex-col">
       <Navigation />
-      <div className="flex-grow">
-        <main className="container mx-auto px-8 py-20">
-          <div className="max-w-7xl mx-auto">
+      <main className="flex-grow container mx-auto px-8 py-20">
+        <div className="max-w-7xl mx-auto">
             {/* Top Section - NinjaTrader */}
             <div className="mb-32">
-              <h1 className="text-4xl font-bold text-center mb-16 text-primary">Our Recommended Trading Platform</h1>
+              <h1 className="text-4xl font-bold text-center mb-16 text-white">Our Recommended Trading Platform</h1>
               
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Images */}
@@ -35,13 +34,13 @@ export default function NinjaTraderPage() {
                 
                 {/* Right side - Content */}
                 <div>
-                  <p className="text-text-secondary text-lg mb-8">
+                  <p className="text-text-primary text-lg mb-8">
                     NinjaTrader® is our #1 recommended trading platform preferred by traders worldwide including our clients.
                   </p>
                   
-                  <div className="bg-bg-secondary rounded-lg p-6 mb-8">
-                    <h2 className="text-xl font-semibold mb-4 text-primary">Download NinjaTrader & receive immediate FREE access to:</h2>
-                    <ul className="space-y-3 text-text-secondary">
+                  <div className="bg-surface rounded-lg p-6 mb-8">
+                    <h2 className="text-xl font-semibold mb-4 text-white">Download NinjaTrader & receive immediate FREE access to:</h2>
+                    <ul className="space-y-3 text-text-primary">
                       <li className="flex items-start">
                         <span className="text-primary mr-3 mt-1">•</span>
                         <span>Simulated trading with real-time futures data</span>
@@ -61,7 +60,7 @@ export default function NinjaTraderPage() {
                     </ul>
                   </div>
                   
-                  <div className="text-text-secondary mb-8">
+                  <div className="text-text-primary mb-8">
                     <p className="mb-4">
                       NinjaTrader's award-winning trading platform is consistently voted an industry leader by the trading community. 
                       Featuring 1000s of Apps & Add-Ons for unlimited customization, NinjaTrader is used by over 1.9 million traders 
@@ -83,18 +82,18 @@ export default function NinjaTraderPage() {
 
             {/* Bottom Section - Kinetick */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-center mb-16 text-primary">Our Recommended Market Data Feed</h2>
+              <h2 className="text-3xl font-bold text-center mb-16 text-white">Our Recommended Market Data Feed</h2>
               
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left side - Content */}
                 <div>
-                  <div className="bg-bg-secondary rounded-lg p-6">
-                    <p className="text-text-secondary mb-6">
+                  <div className="bg-surface rounded-lg p-6">
+                    <p className="text-text-primary mb-6">
                       Kinetick® delivers reliable, fast and cost-effective market data to help level the playing field for active traders. 
                       Take advantage of unfiltered, real time quotes for stocks, futures and forex that exceed the expectations of the 
                       world's most demanding traders, like us!
                     </p>
-                    <p className="text-text-secondary mb-8">
+                    <p className="text-text-primary mb-8">
                       Get started with FREE end-of-day historical market data directly through the NinjaTrader platform and learn how 
                       you can significantly reduce CME Group Globex exchange fees on real-time market data with Kinetick.
                     </p>
@@ -126,10 +125,9 @@ export default function NinjaTraderPage() {
                 </div>
               </div>
             </div>
-          </div>
-        </main>
-      </div>
+        </div>
+      </main>
       <Footer />
-    </>
+    </div>
   )
 } 

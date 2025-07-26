@@ -1,53 +1,67 @@
 import Image from "next/image";
 import { getImagePath } from "@/lib/utils";
+import { 
+  ChartBarIcon,
+  CursorArrowRaysIcon,
+  ArrowPathIcon,
+  CalculatorIcon,
+  ArrowTrendingUpIcon,
+  RocketLaunchIcon
+} from '@heroicons/react/24/solid';
 
 export default function CoreFeatures() {
   const features = [
     {
-      title: "#TheStrat Pattern Recognition",
+      title: "STRATENGINE",
+      subtitle: "The Complete Suite",
       description:
-        "Complete automation of The Strat methodology with 1, 2U, 2D, 3 bar categorization, plus Hammer and Shooter momentum patterns. Includes Inside/Outside bar detection and multi-timeframe trend analysis.",
-      icon: "📊",
+        "All #TheStrat patterns (1, 2U, 2D, 3), Failed 2s modes, 3→2 setups, and broadening formations. Our most comprehensive pattern recognition system.",
+      icon: ChartBarIcon,
       gradient: "from-primary to-sky-blue",
       gif: "giphy (1).gif",
     },
     {
-      title: "Multi-Timeframe Analysis",
+      title: "Sniper",
+      subtitle: "Perfect Alignment",
       description:
-        "Advanced TFC (Timeframe Continuity) calculations across up to 4 higher timeframes. Dual trend methods with ATR trail and broadening formation detection for comprehensive bias analysis.",
-      icon: "⏰",
+        "Waits for multiple timeframes to align before entry. Configurable HTF requirements with optional momentum pattern confirmation.",
+      icon: CursorArrowRaysIcon,
       gradient: "from-secondary to-light-purple",
       gif: "giphy (2).gif",
     },
     {
-      title: "Advanced Entry Signals",
+      title: "Failed 2s",
+      subtitle: "Reversal Specialist",
       description:
-        "Failed 2s reversal detection with 3 modes (None/Both/Only), optional 3-bar pattern setups (3→2U, 3→2D), momentum patterns, and pullback filters requiring SMA touch within 3 bars.",
-      icon: "🎯",
+        "Focuses exclusively on 2-going-3 reversal patterns with open cross detection. Includes percentage-based previous candle targets.",
+      icon: ArrowPathIcon,
       gradient: "from-warning to-orange",
       gif: "giphy (3).gif",
     },
     {
-      title: "Professional Risk Management",
+      title: "FibStrike",
+      subtitle: "Structure + Fibonacci",
       description:
-        "Account percentage-based position sizing, fixed dollar risk controls, drawdown-adjusted calculations, multiple stop types (Fixed/Previous/Current Bar), and smart auto-adjusting stop placement.",
-      icon: "🛡️",
+        "Break of Structure (BOS) detection with Fibonacci retracement levels. Independently configurable long/short settings.",
+      icon: CalculatorIcon,
       gradient: "from-success to-bright-green",
       gif: "giphy (4).gif",
     },
     {
-      title: "Smart Exit Management",
+      title: "TapsORBs",
+      subtitle: "Range Breakouts",
       description:
-        "R-multiple reward targets, Cover Risk mode (1:1 R/R + custom target), break-even stop management, first reversal exits, and daily profit/loss limits with automatic position management.",
-      icon: "📈",
+        "Prior-day and current-day opening range breakout strategies. Perfect for capturing morning momentum with time-based entries.",
+      icon: ArrowTrendingUpIcon,
       gradient: "from-teal to-light-teal",
       gif: "giphy (5).gif",
     },
     {
-      title: "Visual Trading Interface",
+      title: "StrongClose",
+      subtitle: "Coming Soon",
       description:
-        "Trend-based candle coloring, 20-period SMA display, ATR trail indicators, broadening formation trendlines, swing pivot markers, and customizable chart management controls.",
-      icon: "🎨",
+        "Beta strategy focusing on strong close patterns with return-to-open setups. Early results showing promise.",
+      icon: RocketLaunchIcon,
       gradient: "from-bright-pink to-magenta",
       gif: "giphy (6).gif",
     },
@@ -57,15 +71,14 @@ export default function CoreFeatures() {
     <section className="py-20 bg-gradient-to-b from-surface to-background-secondary">
       <div className="container mx-auto px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-text-primary mb-6">
-            Core{" "}
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            Choose Your{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Features
+              Trading Style
             </span>
           </h2>
           <p className="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
-            Six powerful modules delivering complete #TheStrat automation for
-            professional trading
+            Each bot specializes in finding trades differently, while maintaining our professional standards
           </p>
         </div>
 
@@ -78,19 +91,21 @@ export default function CoreFeatures() {
               <div
                 className={`w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}
               >
-                <span className="text-2xl">{feature.icon}</span>
+                <feature.icon className="w-8 h-8 text-white" />
               </div>
 
-              <h3 className="text-xl font-semibold text-text-primary mb-4 group-hover:text-primary transition-colors duration-300">
+              <h3 className="text-xl font-semibold text-white mb-1 group-hover:text-primary transition-colors duration-300">
                 {feature.title}
               </h3>
+              
+              <p className="text-sm text-primary mb-4">{feature.subtitle}</p>
 
-              <p className="text-text-secondary leading-relaxed">
+              <p className="text-text-secondary leading-relaxed text-sm">
                 {feature.description}
               </p>
 
               {/* Demo GIF */}
-              <div className="mt-6 bg-surface-elevated rounded-lg overflow-hidden border border-surface-higher group-hover:border-primary/50 transition-colors duration-300">
+              <div className="mt-6 bg-surface rounded-lg overflow-hidden border border-surface-elevated group-hover:border-primary/50 transition-colors duration-300">
                 <div className="relative aspect-video">
                   <Image
                     src={getImagePath(`/images/${feature.gif}`)}
@@ -108,18 +123,17 @@ export default function CoreFeatures() {
 
         <div className="text-center mt-16">
           <div className="card-elevated p-8 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-text-primary mb-4">
-              Experience the Full Power of StratEngine
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              Ready to Start Trading?
             </h3>
             <p className="text-text-secondary mb-6">
-              Ready to automate your #TheStrat trading with professional-grade
-              precision?
+              Get lifetime access to all current and future NinjaStrat bots with our professional framework
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="btn-primary glow-primary">
-                Start Free Trial
-              </button>
-              <button className="btn-secondary">Watch Full Demo</button>
+              <a href="/pricing" className="btn-primary glow-primary">
+                View Pricing
+              </a>
+              <a href="/support" className="btn-secondary">Get Support</a>
             </div>
           </div>
         </div>
