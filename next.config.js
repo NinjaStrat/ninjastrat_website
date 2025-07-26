@@ -3,14 +3,14 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   output: 'export',
-  basePath: isProd ? '/ninjastrat_website' : '',
-  assetPrefix: isProd ? '/ninjastrat_website' : '',
+  basePath: '',
+  assetPrefix: '',
   trailingSlash: true,
   images: {
     unoptimized: true
   },
   // Configure for static export
-  distDir: 'docs',
+  distDir: 'out',
 }
 
 module.exports = nextConfig 
